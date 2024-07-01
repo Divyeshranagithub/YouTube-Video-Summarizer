@@ -1,0 +1,6 @@
+#gradio
+python-decouple
+youtube-transcript-api
+groq
+streamlit
+validators
