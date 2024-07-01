@@ -10,13 +10,13 @@ if "messages" not in st.session_state:
     st.session_state.messages = []
 
 st.set_page_config(
-    page_title="YouTube Summarizer",
-    page_icon="🤖",
+    page_title="YouTube Video Summarizer",
+    page_icon="🎥",
     layout="wide",
     initial_sidebar_state="expanded",
 )
 st.image('youtube logo.png', width=50 , )
-st.subheader("YouTube Summarizer", divider="rainbow", anchor=False)
+st.subheader("YouTube Video Summarizer", divider="rainbow", anchor=False)
 if url := st.text_input("Enter YouTube video URL:"):
     if validators.url(url) and "youtube.com" in url:
         prompt = get_transcript(url)
